@@ -41,6 +41,15 @@ Il laboratorio è stato organizzato nelle seguenti fasi:
 - Virtual machine software
 - Linux command-line tools
 
+## Contenuti
+- Report completo del laboratorio in formato PDF
+- Script contenente i comandi utilizzati e i rispettivi output lato attaccante
+- Script contenente i comandi utilizzati e i rispettivi output lato vittima
+
+**NB:** lo script lato vittima è stato registrato in un secondo momento. Di conseguenza, alcuni dati possono differire leggermente da quelli riportati nel report. Ad esempio, l'indirizzo IP della vittima indicato nella documentazione è `192.168.1.19`, mentre nello script è `192.168.1.23`.
+
+Fatta eccezione per piccole incongruenze come quella descritta, la documentazione dell'attacco è corretta.
+
 ## Risultati e osservazioni
 
 Il laboratorio ha permesso di approfondire il funzionamento di un test DoS in un ambiente controllato e di osservare il rapporto tra traffico generato, disponibilità del servizio e comportamento del sistema bersaglio.
